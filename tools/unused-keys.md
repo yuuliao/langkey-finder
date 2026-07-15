@@ -1,0 +1,474 @@
+# 疑似未使用的 langkey
+
+產生時間：2026-07-15 13:22 · 掃描來源：/Users/Yu/Project/bns-web-member
+
+lang 檔共 1883 個 key，其中 459 個在原始碼找不到靜態引用。
+
+> ⚠️ 注意：lang 檔來自 POEditor（fetch_langfile.py, project 745234）。
+> 本清單只代表 **bns-web-member 這個 repo** 沒有引用；若該 POEditor 專案
+> 還有其他消費端（App、其他 web repo），刪除前務必先確認跨專案使用情況。
+
+## ⚠️ 可能動態使用（符合 t(`prefix_${x}`) 樣板前綴，勿直接刪）— 88 個
+
+- `buyforyou_cancel_payment_reason_bidding_out_bid`（樣板前綴 `buyforyou_cancel_payment_reason_…`）
+- `buyforyou_cancel_payment_reason_bidding_updated_by_customer`（樣板前綴 `buyforyou_cancel_payment_reason_…`）
+- `buyforyou_cancel_payment_reason_canceled_by_sellers_all_items`（樣板前綴 `buyforyou_cancel_payment_reason_…`）
+- `buyforyou_cancel_payment_reason_canceled_by_sellers_certain_items`（樣板前綴 `buyforyou_cancel_payment_reason_…`）
+- `buyforyou_cancel_payment_reason_change_of_item_prices`（樣板前綴 `buyforyou_cancel_payment_reason_…`）
+- `buyforyou_cancel_payment_reason_not_available_for_purchase`（樣板前綴 `buyforyou_cancel_payment_reason_…`）
+- `buyforyou_cancel_payment_reason_other`（樣板前綴 `buyforyou_cancel_payment_reason_…`）
+- `buyforyou_cancel_payment_reason_out_of_stock`（樣板前綴 `buyforyou_cancel_payment_reason_…`）
+- `buyforyou_cancel_payment_reason_requested_by_customers`（樣板前綴 `buyforyou_cancel_payment_reason_…`）
+- `buyforyou_cancel_payment_reason_suspicious_sellers`（樣板前綴 `buyforyou_cancel_payment_reason_…`）
+- `buyforyou_declined_reason_bidding_updated_by_customer`（樣板前綴 `buyforyou_declined_reason_…`）
+- `buyforyou_declined_reason_combined`（樣板前綴 `buyforyou_declined_reason_…`）
+- `buyforyou_declined_reason_long_shipping_time`（樣板前綴 `buyforyou_declined_reason_…`）
+- `buyforyou_declined_reason_multiple_seller`（樣板前綴 `buyforyou_declined_reason_…`）
+- `buyforyou_declined_reason_no_product_link`（樣板前綴 `buyforyou_declined_reason_…`）
+- `buyforyou_declined_reason_not_available_for_purchase`（樣板前綴 `buyforyou_declined_reason_…`）
+- `buyforyou_declined_reason_not_enough_information`（樣板前綴 `buyforyou_declined_reason_…`）
+- `buyforyou_declined_reason_other`（樣板前綴 `buyforyou_declined_reason_…`）
+- `buyforyou_declined_reason_out_of_stock`（樣板前綴 `buyforyou_declined_reason_…`）
+- `buyforyou_declined_reason_overdue_unpaid_request`（樣板前綴 `buyforyou_declined_reason_…`）
+- `buyforyou_declined_reason_overweight`（樣板前綴 `buyforyou_declined_reason_…`）
+- `buyforyou_declined_reason_prohibited_restricted_item`（樣板前綴 `buyforyou_declined_reason_…`）
+- `buyforyou_declined_reason_suspicious_sellers`（樣板前綴 `buyforyou_declined_reason_…`）
+- `buyforyou_declined_reason_too_many_request`（樣板前綴 `buyforyou_declined_reason_…`）
+- `express_checkout_month_range_early`（樣板前綴 `express_checkout_month_range_…`）
+- `express_checkout_month_range_late`（樣板前綴 `express_checkout_month_range_…`）
+- `express_checkout_month_range_mid`（樣板前綴 `express_checkout_month_range_…`）
+- `notification_option_panel_label_account`（樣板前綴 `notification_option_panel_label_…`）
+- `notification_option_panel_label_all`（樣板前綴 `notification_option_panel_label_…`）
+- `notification_option_panel_label_order`（樣板前綴 `notification_option_panel_label_…`）
+- `notification_type_title_account`（樣板前綴 `notification_type_title_…`）
+- `notification_type_title_all`（樣板前綴 `notification_type_title_…`）
+- `notification_type_title_order`（樣板前綴 `notification_type_title_…`）
+- `payment_status_fail_buyandship_description`（樣板前綴 `payment_status_fail_…`）
+- `payment_status_fail_buyforyou_description`（樣板前綴 `payment_status_fail_…`）
+- `payment_status_fail_title`（樣板前綴 `payment_status_fail_…`）
+- `payment_status_success_buyandship_description`（樣板前綴 `payment_status_success_…`）
+- `payment_status_success_buyforyou_description`（樣板前綴 `payment_status_success_…`）
+- `product_sharing_create_profile_fail_422_BANNED_WORD_CAUGHT`（樣板前綴 `product_sharing_create_profile_fail_…`）
+- `product_sharing_create_profile_fail_422_USERNAME_ALREADY_TOKEN`（樣板前綴 `product_sharing_create_profile_fail_…`）
+- `product_sharing_create_profile_fail_422_VALIDATION_ERROR`（樣板前綴 `product_sharing_create_profile_fail_…`）
+- `product_sharing_items_filter_title_category`（樣板前綴 `product_sharing_items_filter_title_…`）
+- `product_sharing_post_detail_dialog_banned_content_KEY_BANNED_HEALTH_SUPPLEMENT`（樣板前綴 `product_sharing_post_detail_dialog_banned_content_…`）
+- `product_sharing_post_detail_dialog_banned_content_KEY_BANNED_INVALID_LINK`（樣板前綴 `product_sharing_post_detail_dialog_banned_content_…`）
+- `product_sharing_post_detail_dialog_banned_content_KEY_BANNED_INVALID_MEDIA`（樣板前綴 `product_sharing_post_detail_dialog_banned_content_…`）
+- `product_sharing_post_detail_dialog_banned_content_KEY_BANNED_INVALID_PRICE`（樣板前綴 `product_sharing_post_detail_dialog_banned_content_…`）
+- `product_sharing_post_detail_dialog_banned_content_KEY_BANNED_OTHER`（樣板前綴 `product_sharing_post_detail_dialog_banned_content_…`）
+- `product_sharing_post_detail_dialog_banned_content_KEY_BANNED_PROHIBITED_ITEMS`（樣板前綴 `product_sharing_post_detail_dialog_banned_content_…`）
+- `product_sharing_post_detail_info_title_post`（樣板前綴 `product_sharing_post_detail_info_title_…`）
+- `product_sharing_post_detail_info_title_product`（樣板前綴 `product_sharing_post_detail_info_title_…`）
+- `product_sharing_post_detail_info_title_shipping`（樣板前綴 `product_sharing_post_detail_info_title_…`）
+- `product_sharing_post_detail_promote_service_description_b4u`（樣板前綴 `product_sharing_post_detail_promote_service_description_…`）
+- `product_sharing_post_detail_promote_service_description_bns`（樣板前綴 `product_sharing_post_detail_promote_service_description_…`）
+- `product_sharing_post_detail_promote_service_description_easybuy`（樣板前綴 `product_sharing_post_detail_promote_service_description_…`）
+- `product_sharing_post_detail_promote_service_title_b4u`（樣板前綴 `product_sharing_post_detail_promote_service_title_…`）
+- `product_sharing_post_detail_promote_service_title_bns`（樣板前綴 `product_sharing_post_detail_promote_service_title_…`）
+- `product_sharing_post_detail_promote_service_title_easybuy`（樣板前綴 `product_sharing_post_detail_promote_service_title_…`）
+- `product_sharing_post_detail_service_action_b4u`（樣板前綴 `product_sharing_post_detail_service_action_…`）
+- `product_sharing_post_detail_service_action_easybuy`（樣板前綴 `product_sharing_post_detail_service_action_…`）
+- `product_sharing_post_detail_service_title_b4u`（樣板前綴 `product_sharing_post_detail_service_title_…`）
+- `product_sharing_post_detail_service_title_bns`（樣板前綴 `product_sharing_post_detail_service_title_…`）
+- `product_sharing_post_detail_service_title_easybuy`（樣板前綴 `product_sharing_post_detail_service_title_…`）
+- `product_sharing_setting_text_discount_10`（樣板前綴 `product_sharing_setting_text_discount_…`）
+- `product_sharing_setting_text_discount_20`（樣板前綴 `product_sharing_setting_text_discount_…`）
+- `product_sharing_setting_text_discount_30`（樣板前綴 `product_sharing_setting_text_discount_…`）
+- `product_sharing_setting_text_discount_40`（樣板前綴 `product_sharing_setting_text_discount_…`）
+- `product_sharing_setting_text_discount_50`（樣板前綴 `product_sharing_setting_text_discount_…`）
+- `product_sharing_setting_text_discount_60`（樣板前綴 `product_sharing_setting_text_discount_…`）
+- `product_sharing_setting_text_discount_70`（樣板前綴 `product_sharing_setting_text_discount_…`）
+- `product_sharing_setting_text_discount_80`（樣板前綴 `product_sharing_setting_text_discount_…`）
+- `product_sharing_setting_text_discount_90`（樣板前綴 `product_sharing_setting_text_discount_…`）
+- `product_sharing_setting_text_discount_discount_not_available`（樣板前綴 `product_sharing_setting_text_discount_…`）
+- `product_sharing_setting_text_payment_method_american_express`（樣板前綴 `product_sharing_setting_text_payment_method_…`）
+- `product_sharing_setting_text_payment_method_apple_pay`（樣板前綴 `product_sharing_setting_text_payment_method_…`）
+- `product_sharing_setting_text_payment_method_bank_transfer`（樣板前綴 `product_sharing_setting_text_payment_method_…`）
+- `product_sharing_setting_text_payment_method_google_pay`（樣板前綴 `product_sharing_setting_text_payment_method_…`）
+- `product_sharing_setting_text_payment_method_jcb`（樣板前綴 `product_sharing_setting_text_payment_method_…`）
+- `product_sharing_setting_text_payment_method_master`（樣板前綴 `product_sharing_setting_text_payment_method_…`）
+- `product_sharing_setting_text_payment_method_others`（樣板前綴 `product_sharing_setting_text_payment_method_…`）
+- `product_sharing_setting_text_payment_method_paypal`（樣板前綴 `product_sharing_setting_text_payment_method_…`）
+- `product_sharing_setting_text_payment_method_union_pay`（樣板前綴 `product_sharing_setting_text_payment_method_…`）
+- `product_sharing_setting_text_payment_method_visa`（樣板前綴 `product_sharing_setting_text_payment_method_…`）
+- `product_sharing_timeago_days`（樣板前綴 `product_sharing_timeago_…`）
+- `product_sharing_timeago_hours`（樣板前綴 `product_sharing_timeago_…`）
+- `product_sharing_timeago_minutes`（樣板前綴 `product_sharing_timeago_…`）
+- `product_sharing_timeago_months`（樣板前綴 `product_sharing_timeago_…`）
+- `product_sharing_timeago_seconds`（樣板前綴 `product_sharing_timeago_…`）
+- `product_sharing_timeago_years`（樣板前綴 `product_sharing_timeago_…`）
+
+## 🗑 完全查無引用（刪除候選，仍建議人工確認）— 371 個
+
+- `account_index_addresses_text`
+- `account_index_declaration_text`
+- `account_index_order_text`
+- `account_index_profile_text`
+- `account_index_shopping_text`
+- `account_summary_credit`
+- `account_summary_date_format`
+- `account_summary_since`
+- `account_summary_unverified`
+- `add_request_entry_title`
+- `add_request_hover_label`
+- `add_shipment_entry_title`
+- `add_shipment_hover_label`
+- `address_empty_counter`
+- `address_form_address_1_placeholder`
+- `address_form_address_2_placeholder`
+- `address_form_address_type_placeholder`
+- `address_form_first_name`
+- `address_form_first_name_local`
+- `address_form_first_name_local_placeholder`
+- `address_form_first_name_placeholder`
+- `address_form_id_placeholder`
+- `address_form_image_id`
+- `address_form_image_id_placeholder`
+- `address_form_last_name`
+- `address_form_last_name_local`
+- `address_form_last_name_local_placeholder`
+- `address_form_last_name_placeholder`
+- `address_form_mobile_placeholder`
+- `address_form_state_placeholder`
+- `address_form_zip_placeholder`
+- `address_how_it_works_notice`
+- `address_new_description`
+- `address_unverify_detail_link`
+- `address_upload_image_upload_tap`
+- `alert_detail_message`
+- `alert_problem_order_message`
+- `alert_problem_shipment_or_order_message`
+- `alert_profile_almost_message`
+- `alert_user_email_verified_message`
+- `alert_user_profile_form_message`
+- `bidding_request_detail_status_cancelled_overdue_description`
+- `bottom_nav_buyandship`
+- `button_apply_title`
+- `button_normal_send_sms`
+- `button_text_back_to_index`
+- `buyandshop_product_card_price_unit`
+- `buyforyou_create_request_card_button`
+- `buyforyou_create_request_card_text`
+- `buyforyou_entry_widget_desc`
+- `buyforyou_entry_widget_item_link_placeholder`
+- `buyforyou_entry_widget_left_btn`
+- `buyforyou_entry_widget_right_btn`
+- `buyforyou_index_title`
+- `buyforyou_list_bottom_remark_approved`
+- `buyforyou_list_bottom_remark_archived`
+- `buyforyou_list_bottom_remark_processing`
+- `buyforyou_list_bottom_remark_purchased`
+- `buyforyou_list_bottom_remark_reviewing`
+- `buyforyou_list_count_unit`
+- `buyforyou_new_add_button_next`
+- `buyforyou_new_add_item_additional_title`
+- `buyforyou_new_add_item_banner_content`
+- `buyforyou_new_add_item_banner_title`
+- `buyforyou_new_add_item_color_placeholder`
+- `buyforyou_new_add_item_discount_code_placeholder`
+- `buyforyou_new_add_item_length_placeholder`
+- `buyforyou_new_add_item_link_placeholder`
+- `buyforyou_new_add_item_name`
+- `buyforyou_new_add_item_name_placeholder`
+- `buyforyou_new_add_item_others`
+- `buyforyou_new_add_item_others_placeholder`
+- `buyforyou_new_add_item_price_placeholder`
+- `buyforyou_new_add_item_quantity`
+- `buyforyou_new_add_item_size_placeholder`
+- `buyforyou_new_add_item_title`
+- `buyforyou_new_add_item_total`
+- `buyforyou_new_discount_code_tooltip`
+- `buyforyou_order_detail_log_price`
+- `buyforyou_order_detail_log_quantity`
+- `buyforyou_order_detail_main_product_default_cacnelled_message`
+- `buyforyou_order_details_approved`
+- `buyforyou_order_details_buyer`
+- `buyforyou_order_details_contain`
+- `buyforyou_order_details_download_receipt_button`
+- `buyforyou_order_details_item_cancelled`
+- `buyforyou_order_details_item_subtotal`
+- `buyforyou_order_details_remark`
+- `buyforyou_order_details_request_info_title`
+- `buyforyou_order_details_request_note`
+- `buyforyou_order_details_tax`
+- `buyforyou_order_details_warehouse`
+- `buyforyou_payment_due_at_format`
+- `buyforyou_payment_failed_button_bin_number_not_match_coupon`
+- `buyforyou_payment_failed_content_bin_number_not_match_coupon`
+- `buyforyou_payment_failed_title_bin_number_not_match_coupon`
+- `buyforyou_request_detail_status_completed_label`
+- `change_ship_to_text_delivery`
+- `change_ship_to_text_redemption`
+- `community_buyer_paid_price_label`
+- `community_group_deal_price_label`
+- `consolidate_deselect_all`
+- `consolidate_select_all`
+- `consolidation_pricing_option_small_package`
+- `consolidation_pricing_option_standard`
+- `continue_on_website_button`
+- `copy_button`
+- `coupon_centre_tab_title_1`
+- `coupon_centre_tab_title_2`
+- `coupon_centre_tab_title_3`
+- `credit_redeem_all`
+- `credit_redeem_all_remain`
+- `credit_redeem_balance_zero`
+- `delete_account_button_action_text`
+- `delete_order_button`
+- `dialog_apply_draft_no`
+- `dialog_apply_draft_title`
+- `dialog_apply_draft_yes`
+- `dialog_global_site_local_access_description`
+- `dialog_global_site_local_access_title`
+- `dialog_later`
+- `dialog_legal_profile_delete`
+- `dialog_revert`
+- `dialog_switch_title`
+- `dialog_switch_version`
+- `done_button`
+- `express_checkout_payment_failed_button_incorrect_price`
+- `express_checkout_payment_failed_button_not_available`
+- `express_checkout_payment_failed_button_product_not_exists`
+- `express_checkout_payment_failed_button_product_out_of_stock`
+- `express_checkout_payment_failed_button_reach_limit_quantity`
+- `express_checkout_payment_failed_content_incorrect_price`
+- `express_checkout_payment_failed_content_not_available`
+- `express_checkout_payment_failed_content_product_not_exists`
+- `express_checkout_payment_failed_content_product_out_of_stock`
+- `express_checkout_payment_failed_content_reach_limit_quantity`
+- `express_checkout_payment_failed_snackbar_incorrect_price`
+- `express_checkout_payment_failed_snackbar_not_available`
+- `express_checkout_payment_failed_snackbar_product_not_exists`
+- `express_checkout_payment_failed_snackbar_product_out_of_stock`
+- `express_checkout_payment_failed_snackbar_reach_limit_quantity`
+- `express_checkout_payment_failed_title_incorrect_price`
+- `express_checkout_payment_failed_title_not_available`
+- `express_checkout_payment_failed_title_product_not_exists`
+- `express_checkout_payment_failed_title_product_out_of_stock`
+- `express_checkout_payment_failed_title_reach_limit_quantity`
+- `global_site_shop_location_button`
+- `global_site_stay_button`
+- `how_to_buy_button`
+- `how_to_buy_create_shipping_order_description`
+- `how_to_buy_create_shipping_order_title`
+- `how_to_buy_pay_for_your_order_description`
+- `how_to_buy_pay_for_your_order_title`
+- `how_to_buy_place_order_description`
+- `how_to_buy_place_order_title`
+- `how_to_buy_wait_for_delivery_description`
+- `how_to_buy_wait_for_delivery_title`
+- `how_to_shipping_add_shipment_description`
+- `how_to_shipping_add_shipment_title`
+- `how_to_shipping_button`
+- `how_to_shipping_create_shipping_order_description`
+- `how_to_shipping_create_shipping_order_title`
+- `how_to_shipping_wait_for_delivery_description`
+- `how_to_shipping_wait_for_delivery_title`
+- `how_to_shipping_warehouse_address_description`
+- `how_to_shipping_warehouse_address_title`
+- `input_buyforyou_request_bidding_least_price_with_tax_error_msg`
+- `input_buyforyou_request_bidding_title`
+- `input_buyforyou_request_min_bid_title`
+- `input_buyforyou_request_new_max_bid_local_title`
+- `learn_more_desc_shipment_problem`
+- `learn_more_desc_shipment_undeclared`
+- `legal_profile_dialog`
+- `main_nav_home`
+- `member_centre_ebay_sidebar_description`
+- `member_centre_yahoo_sidebar_title`
+- `member_header_greeting`
+- `menu_list_title_account_settings`
+- `menu_list_title_address`
+- `menu_list_title_credits`
+- `menu_list_title_product_sharing`
+- `menu_list_title_profile`
+- `menu_list_title_referral`
+- `menu_list_title_support`
+- `menu_title_account`
+- `menu_title_settings`
+- `my_account_menu_item_account_settings`
+- `my_account_not_login_card_button`
+- `my_account_not_login_card_title`
+- `new_text`
+- `or_text`
+- `order_detail_date_completed_title`
+- `order_detail_date_created_title`
+- `order_detail_date_delivery_time_title`
+- `order_detail_date_estimated_title`
+- `order_detail_date_pickup_title`
+- `order_detail_header_status`
+- `order_detail_tax_download`
+- `order_detail_total_weight_title`
+- `order_details_button`
+- `order_details_consolidate_created_time_tooltip`
+- `order_payment_method_online`
+- `page_title_account_settings`
+- `page_title_confirm_phone`
+- `page_title_confirm_phone_placeholder`
+- `page_title_enter_confirm_code`
+- `page_title_profile`
+- `page_title_shipments_select`
+- `payment_credit_card_title`
+- `payment_method_detail_cash_on_delivery`
+- `payment_status_total_title`
+- `payment_verify_phone_number_success_msg`
+- `product_card_ebay_title`
+- `product_sharing_button_deleted`
+- `product_sharing_post_detail_item_title_unit_price_tooltip`
+- `product_sharing_post_form_category1_title`
+- `product_sharing_post_more`
+- `product_sharing_profile_title`
+- `profile_almost_content`
+- `profile_almost_notice`
+- `profile_almost_title`
+- `profile_checkbox_newsletter`
+- `profile_legal_name`
+- `profile_legal_title`
+- `profile_options_gender`
+- `profile_other_settings_tab_title`
+- `profile_phone_verify_countrycode_panel_title`
+- `profile_phone_verify_title`
+- `profile_sms_validate_error`
+- `profile_sms_verify_content`
+- `profile_title_birthday`
+- `profile_title_birthday_placeholder`
+- `profile_title_email`
+- `profile_title_firstName`
+- `profile_title_firstName_placeholder`
+- `profile_title_gender`
+- `profile_title_gender_placeholder`
+- `profile_title_income`
+- `profile_title_income_placeholder`
+- `profile_title_inviteCode`
+- `profile_title_inviteCode_placeholder`
+- `profile_title_lang`
+- `profile_title_lang_placeholder`
+- `profile_title_lastName`
+- `profile_title_lastName_placeholder`
+- `profile_title_mobile`
+- `profile_title_mobile_placeholder`
+- `profile_title_source`
+- `profile_title_source_placeholder`
+- `profile_title_userId`
+- `profile_user_profile_password_title`
+- `profile_user_profile_tab_title`
+- `read_before_you_buy_title`
+- `redemption_center_filter_l1_title`
+- `redemption_center_filter_l2_title`
+- `redemption_center_filter_l3_title`
+- `redemption_center_filter_l4_title`
+- `redemption_picker_area_title`
+- `redemption_picker_delivery_title`
+- `redemption_picker_district_title`
+- `redemption_picker_filter_area_default`
+- `redemption_picker_filter_district_default`
+- `redemption_picker_point_disable_message`
+- `redemption_picker_recommended`
+- `redemption_picker_search_keywords_subtitle`
+- `referral_sign_up_successful_page_description`
+- `referral_sign_up_successful_page_title`
+- `registered_success_button_visit_member_centre`
+- `settings_account_description`
+- `settings_account_email_check_dialog_button_text`
+- `settings_account_email_check_dialog_description`
+- `settings_account_interests_label`
+- `settings_account_interests_text`
+- `settings_account_interests_text_empty`
+- `settings_account_interests_update_fail`
+- `settings_account_interests_update_success`
+- `settings_account_password_confirm_placeholder`
+- `settings_account_password_dialog_submit_button`
+- `settings_account_password_dialog_title`
+- `settings_account_password_forget_link_text`
+- `settings_account_password_new_placeholder`
+- `settings_account_password_old_placeholder`
+- `settings_account_password_text`
+- `settings_account_password_update_success`
+- `settings_account_subtitle_interests`
+- `settings_account_subtitle_login`
+- `settings_account_subtitle_social_connects`
+- `share_social_facebook`
+- `share_social_line`
+- `share_social_telegram`
+- `share_social_twitter`
+- `share_social_viber`
+- `share_social_wechat`
+- `share_social_weibo`
+- `share_social_whatapp`
+- `shipment_consolidate_action_button`
+- `shipment_consolidate_form_credits_placeholder`
+- `shipment_consolidate_form_credits_title`
+- `shipment_consolidate_form_discount_section_option_credit`
+- `shipment_consolidate_form_egui_company_title`
+- `shipment_consolidate_form_egui_donate_selector_placeholder`
+- `shipment_consolidate_form_egui_donate_selector_title`
+- `shipment_consolidate_form_egui_selector_placeholder`
+- `shipment_consolidate_form_pay_placeholder`
+- `shipment_consolidate_form_shipment_placeholder`
+- `shipment_consolidate_form_shipment_title`
+- `shipment_consolidate_form_summary_title`
+- `shipment_detail_main_order_info_title`
+- `shipment_detail_main_product_item_subtotal`
+- `shipment_detail_main_product_item_title`
+- `shipment_insurance_page_quick_tips_title`
+- `shipment_new_add_item_category1_placeholder`
+- `shipment_new_add_item_category2`
+- `shipment_new_add_item_quantity_placeholder`
+- `shipment_new_courier`
+- `shipment_new_courier_placeholder`
+- `shipment_new_how_it_works_notice`
+- `shipment_new_url_tooltip`
+- `shipment_order_details_status_consolidated_label`
+- `shipment_status_count_unit`
+- `shipment_status_shipment_badge_bns_in`
+- `shipment_status_shipment_badge_bns_out`
+- `shipment_status_shipment_badge_bns_warehouse_in`
+- `shipment_status_shipment_badge_completed`
+- `shipment_status_shipment_badge_declared`
+- `shipment_status_shipment_badge_delivered`
+- `shipment_status_shipment_badge_in_dispute`
+- `shipment_status_shipment_badge_packed`
+- `shipment_status_shipment_badge_ready_for_pickup`
+- `shipment_status_shipment_badge_ready_to_consolidate`
+- `shipment_status_shipment_badge_received_by_warehouse`
+- `shipment_status_shipment_badge_undeclared`
+- `shipment_status_shipment_in_title`
+- `shipment_status_shipment_unclaim_title`
+- `shipment_url_helptext_msg1`
+- `snack_bar_legal_profile_delete_fail`
+- `snack_bar_legal_profile_delete_success`
+- `snack_bar_loading`
+- `snack_bar_product_sharing_create_post_success`
+- `social_account_connect_success`
+- `social_account_disconnect_alert`
+- `social_account_disconnect_disabled`
+- `social_account_disconnect_success`
+- `text_button_action_resend`
+- `tooltip_action_progress`
+- `tooltip_action_start`
+- `tooltip_action_welcome_member_center`
+- `tooltip_action_welcome_member_center_got_it`
+- `top_bar_icon_account`
+- `top_bar_icon_notification`
+- `top_bar_icon_order`
+- `top_bar_icon_shipment`
+- `top_bar_icon_warehouse`
+- `unit_buyforyou_order`
+- `unit_per_pound`
+- `user_customs_clearance_address_default_switch_description`
+- `validation_message_address_line_length`
+- `validation_message_consolidate_shipment_credit_numeric`
+- `validation_message_consolidate_shipment_credit_required`
+- `validation_message_greater_than_zero`
+- `validation_message_mobile_number_required`
+- `validation_message_password_length`
+- `validation_message_password_not_match`
+- `validation_message_profile_form_firstName_required`
+- `validation_message_profile_form_lastName_required`
+- `validation_message_quantity`
+- `validation_message_zip`
+- `verify_email_error_message`
+- `verify_phone_number_sent_error_message`
+- `view_more`
+- `welcome_user_name_text`
