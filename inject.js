@@ -234,7 +234,8 @@
 		if (explicitKeys) {
 			routeMode = true
 			currentHits = flat[cur].filter(([k]) => explicitKeys.has(k)).slice(0, 500)
-			note = explicitNote
+			note = explicitNote + (q ? `　·　符合「<b>${escHtml(q)}</b>」的排在前` : '')
+			note += `　<span class="__lk_clear_mode" style="color:#c00;cursor:pointer">✕ 清除</span>`
 		} else if (q && q.startsWith('/')) {
 			// path search: keys whose route matches the typed path (prefix)
 			routeMode = true
@@ -282,25 +283,32 @@
 				`<div style="color:#999;padding:8px">${note || '無結果'}${note ? ' · 無結果' : ''}</div>`
 			return
 		}
-		// route mode: page-specific keys first, site-wide shared last
-		if (routeMode && LK_MAP) {
-			currentHits = [...currentHits].sort((a, b) => {
-				const ra = LK_MAP[a[0]]?.routes?.length ?? 999
-				const rb = LK_MAP[b[0]]?.routes?.length ?? 999
-				return ra - rb
-			})
-		}
 		const noteHtml = note
 			? `<div style="color:#666;padding:6px 4px;font-size:12px;border-bottom:1px solid #eee">${note}</div>`
 			: ''
 
-		const sorted = probed
-			? [...currentHits].sort((a, b) => {
-					const ap = probed[a[0]] ? 1 : 0
-					const bp = probed[b[0]] ? 1 : 0
-					return bp - ap
-				})
-			: currentHits
+		// unified ranking: probe hit > matches search text (Page keys mode) > page-specific
+		const ql2 = explicitKeys && q ? q.toLowerCase() : null
+		const score = ([k, v]) => {
+			let s = 0
+			if (probed && probed[k]) s += 4
+			if (
+				ql2 &&
+				(k.toLowerCase().includes(ql2) || v.toLowerCase().includes(ql2))
+			)
+				s += 2
+			return s
+		}
+		const sorted = [...currentHits].sort((a, b) => {
+			const d = score(b) - score(a)
+			if (d) return d
+			if (routeMode && LK_MAP) {
+				const ra = LK_MAP[a[0]]?.routes?.length ?? 999
+				const rb = LK_MAP[b[0]]?.routes?.length ?? 999
+				return ra - rb
+			}
+			return 0
+		})
 
 		res.innerHTML = noteHtml + sorted
 			.map(([k, v]) => {
@@ -323,6 +331,13 @@
 
 	// row click -> copy key (delegated once instead of per-row handlers)
 	res.addEventListener('click', e => {
+		if (e.target.closest('.__lk_clear_mode')) {
+			explicitKeys = null
+			probed = null
+			probeMsg.textContent = ''
+			render(inp.value.trim())
+			return
+		}
 		if (e.target.closest('a')) return // let route links work
 		const row = e.target.closest('.__lk_row')
 		if (!row) return
@@ -377,16 +392,19 @@
 		explicitNote = `📄 本頁 <b>${escHtml(paths[paths.length - 1])}</b> · ${keys.size} keys（不含動態拼接的 key）`
 		probed = null
 		probeMsg.textContent = ''
-		render('')
+		render(inp.value.trim())
 	}
 
 	let inputTimer = null
 	inp.oninput = e => {
-		explicitKeys = null
-		probed = null
-		probeMsg.textContent = ''
+		// in Page keys mode, typing re-ranks within the page's key set;
+		// otherwise it's a fresh search (probe results no longer apply)
+		if (!explicitKeys) {
+			probed = null
+			probeMsg.textContent = ''
+		}
 		clearTimeout(inputTimer)
-		inputTimer = setTimeout(() => render(e.target.value), 120)
+		inputTimer = setTimeout(() => render(e.target.value.trim()), 120)
 	}
 	sel.onchange = e => {
 		cur = e.target.value
