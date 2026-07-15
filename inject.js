@@ -235,7 +235,7 @@
 			routeMode = true
 			currentHits = flat[cur].filter(([k]) => explicitKeys.has(k)).slice(0, 500)
 			note = explicitNote + (q ? `　·　符合「<b>${escHtml(q)}</b>」的排在前` : '')
-			note += `　<span class="__lk_clear_mode" style="color:#c00;cursor:pointer">✕ 清除</span>`
+			note += `　<span class="__lk_clear_mode" style="color:#0066cc;cursor:pointer;white-space:nowrap">← 返回搜尋</span>`
 		} else if (q && q.startsWith('/')) {
 			// path search: keys whose route matches the typed path (prefix)
 			routeMode = true
@@ -332,10 +332,7 @@
 	// row click -> copy key (delegated once instead of per-row handlers)
 	res.addEventListener('click', e => {
 		if (e.target.closest('.__lk_clear_mode')) {
-			explicitKeys = null
-			probed = null
-			probeMsg.textContent = ''
-			render(inp.value.trim())
+			exitPageMode()
 			return
 		}
 		if (e.target.closest('a')) return // let route links work
@@ -372,8 +369,26 @@
 		}
 	}
 
-	// 📄 本頁 keys — list langkeys the static map attributes to the current route
+	const setPageBtnActive = on => {
+		thisPageBtn.style.background = on ? '#e8f0fe' : '#fff'
+		thisPageBtn.style.borderColor = on ? '#0066cc' : '#ccc'
+		thisPageBtn.style.color = on ? '#0066cc' : ''
+	}
+	const exitPageMode = () => {
+		explicitKeys = null
+		probed = null
+		probeMsg.textContent = ''
+		setPageBtnActive(false)
+		render(inp.value.trim())
+	}
+
+	// 📄 Page keys — list langkeys the static map attributes to the current route.
+	// Acts as a toggle: click again (or「← 返回搜尋」) to go back to normal search.
 	thisPageBtn.onclick = () => {
+		if (explicitKeys) {
+			exitPageMode()
+			return
+		}
 		if (!routeToKeys.size) {
 			probeMsg.textContent = 'route 對照表未載入'
 			return
@@ -392,6 +407,7 @@
 		explicitNote = `📄 本頁 <b>${escHtml(paths[paths.length - 1])}</b> · ${keys.size} keys（不含動態拼接的 key）`
 		probed = null
 		probeMsg.textContent = ''
+		setPageBtnActive(true)
 		render(inp.value.trim())
 	}
 
