@@ -99,7 +99,7 @@
 				<strong>🔍 Find Langkey</strong>
 				<div style="font-size:10px;color:#999;font-weight:normal">${
 					window.__LK_MAP && window.__LK_MAP.generatedAt
-						? `route 資料更新：${window.__LK_MAP.generatedAt}`
+						? `route 資料更新：${window.__LK_MAP.generatedAt}${window.__LK_MAP.repoRef ? `（${window.__LK_MAP.repoRef}）` : ''}`
 						: 'route 對照表未載入'
 				}</div>
 			</div>

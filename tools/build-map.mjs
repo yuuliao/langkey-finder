@@ -18,6 +18,7 @@
 import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs'
 import { join, resolve, relative, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { execSync } from 'node:child_process'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const REPO = process.argv[2] || '/Users/Yu/Project/bns-web-member'
@@ -206,10 +207,20 @@ const now = new Date()
 const pad = n => String(n).padStart(2, '0')
 const generatedAt = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())} ${pad(now.getHours())}:${pad(now.getMinutes())}`
 
+// stamp the scanned repo state so a stale/wrong-branch map is diagnosable
+let repoRef = 'unknown'
+try {
+	const branch = execSync('git branch --show-current', { cwd: REPO }).toString().trim()
+	const commit = execSync('git rev-parse --short HEAD', { cwd: REPO }).toString().trim()
+	const dirty = execSync('git status --porcelain', { cwd: REPO }).toString().trim() ? '*' : ''
+	repoRef = `${branch || 'detached'}@${commit}${dirty}`
+} catch {}
+
 const payload = {
 	generatedFrom: 'bns-web-member',
 	githubBase: GITHUB_BASE,
 	generatedAt,
+	repoRef,
 	keyCount: Object.keys(map).length,
 	map,
 }
@@ -219,7 +230,7 @@ writeFileSync(OUT, JSON.stringify(payload))
 const slimMap = Object.fromEntries(
 	Object.entries(map).map(([k, { routes, shared }]) => [k, { routes, shared }]),
 )
-const slim = { generatedFrom: payload.generatedFrom, generatedAt, keyCount: payload.keyCount, map: slimMap }
+const slim = { generatedFrom: payload.generatedFrom, generatedAt, repoRef, keyCount: payload.keyCount, map: slimMap }
 writeFileSync(OUT_JS, `window.__LK_MAP = ${JSON.stringify(slim)}\n`)
 
 // ---- report --------------------------------------------------------------
@@ -266,6 +277,9 @@ const reportLines = [
 writeFileSync(REPORT, reportLines.join('\n'))
 
 console.log(`generatedAt              : ${generatedAt}`)
+console.log(`scanned repo state       : ${repoRef}${repoRef.endsWith('*') ? '  (⚠ 有未 commit 的變更)' : ''}`)
+if (!repoRef.startsWith('main@') && !repoRef.startsWith('master@'))
+	console.log(`⚠ 警告：repo 不在 main/master，對照表可能不符正式版！`)
 console.log(`unused: maybe-dynamic    : ${maybeDynamic.length}`)
 console.log(`unused: dead candidates  : ${dead.length}`)
 console.log(`report -> ${REPORT}`)
