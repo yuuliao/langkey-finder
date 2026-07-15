@@ -1,8 +1,8 @@
 # 疑似未使用的 langkey
 
-產生時間：2026-07-15 13:22 · 掃描來源：/Users/Yu/Project/bns-web-member
+產生時間：2026-07-15 13:55 · 掃描來源：/Users/Yu/Project/bns-web-member
 
-lang 檔共 1883 個 key，其中 459 個在原始碼找不到靜態引用。
+lang 檔共 1895 個 key，其中 460 個在原始碼找不到靜態引用。
 
 > ⚠️ 注意：lang 檔來自 POEditor（fetch_langfile.py, project 745234）。
 > 本清單只代表 **bns-web-member 這個 repo** 沒有引用；若該 POEditor 專案
@@ -99,7 +99,7 @@ lang 檔共 1883 個 key，其中 459 個在原始碼找不到靜態引用。
 - `product_sharing_timeago_seconds`（樣板前綴 `product_sharing_timeago_…`）
 - `product_sharing_timeago_years`（樣板前綴 `product_sharing_timeago_…`）
 
-## 🗑 完全查無引用（刪除候選，仍建議人工確認）— 371 個
+## 🗑 完全查無引用（刪除候選，仍建議人工確認）— 372 個
 
 - `account_index_addresses_text`
 - `account_index_declaration_text`
@@ -271,11 +271,13 @@ lang 檔共 1883 個 key，其中 459 個在原始碼找不到靜態引用。
 - `input_buyforyou_request_bidding_title`
 - `input_buyforyou_request_min_bid_title`
 - `input_buyforyou_request_new_max_bid_local_title`
+- `item_sold_with_count_title`
+- `item_stock_available_with_count_title`
+- `item_stock_last_one_title`
 - `learn_more_desc_shipment_problem`
 - `learn_more_desc_shipment_undeclared`
 - `legal_profile_dialog`
 - `main_nav_home`
-- `member_centre_ebay_sidebar_description`
 - `member_centre_yahoo_sidebar_title`
 - `member_header_greeting`
 - `menu_list_title_account_settings`
@@ -313,7 +315,6 @@ lang 檔共 1883 個 key，其中 459 個在原始碼找不到靜態引用。
 - `payment_method_detail_cash_on_delivery`
 - `payment_status_total_title`
 - `payment_verify_phone_number_success_msg`
-- `product_card_ebay_title`
 - `product_sharing_button_deleted`
 - `product_sharing_post_detail_item_title_unit_price_tooltip`
 - `product_sharing_post_form_category1_title`
