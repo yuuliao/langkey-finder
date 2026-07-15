@@ -1,7 +1,7 @@
-# Langkey Finder 安裝說明
+# Langkey Finder
 
-在 bns-web-member 頁面上，用畫面文字反查 i18n langkey 的 Chrome 插件。
-**不需要 GitHub 帳號、不需要任何權限。**
+在 bns-web-member 頁面上，用畫面文字反查 i18n langkey 的 Chrome 插件，
+並顯示每個 key 用在哪個頁面路徑。**安裝不需要 GitHub 帳號、不需要任何權限。**
 
 ## 安裝（一次就好）
 
