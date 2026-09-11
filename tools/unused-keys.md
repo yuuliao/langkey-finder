@@ -1,8 +1,8 @@
 # 疑似未使用的 langkey
 
-產生時間：2026-07-15 13:55 · 掃描來源：/Users/Yu/Project/bns-web-member
+產生時間：2026-09-11 13:15 · 掃描來源：/private/tmp/claude-502/-Users-Yu-Project-langkey-finder/bdd5e94c-9be6-4b2c-9a77-38da98c174f5/scratchpad/bns-main
 
-lang 檔共 1895 個 key，其中 460 個在原始碼找不到靜態引用。
+lang 檔共 1879 個 key，其中 404 個在原始碼找不到靜態引用。
 
 > ⚠️ 注意：lang 檔來自 POEditor（fetch_langfile.py, project 745234）。
 > 本清單只代表 **bns-web-member 這個 repo** 沒有引用；若該 POEditor 專案
@@ -99,22 +99,9 @@ lang 檔共 1895 個 key，其中 460 個在原始碼找不到靜態引用。
 - `product_sharing_timeago_seconds`（樣板前綴 `product_sharing_timeago_…`）
 - `product_sharing_timeago_years`（樣板前綴 `product_sharing_timeago_…`）
 
-## 🗑 完全查無引用（刪除候選，仍建議人工確認）— 372 個
+## 🗑 完全查無引用（刪除候選，仍建議人工確認）— 316 個
 
-- `account_index_addresses_text`
-- `account_index_declaration_text`
-- `account_index_order_text`
-- `account_index_profile_text`
-- `account_index_shopping_text`
-- `account_summary_credit`
-- `account_summary_date_format`
-- `account_summary_since`
 - `account_summary_unverified`
-- `add_request_entry_title`
-- `add_request_hover_label`
-- `add_shipment_entry_title`
-- `add_shipment_hover_label`
-- `address_empty_counter`
 - `address_form_address_1_placeholder`
 - `address_form_address_2_placeholder`
 - `address_form_address_type_placeholder`
@@ -132,68 +119,24 @@ lang 檔共 1895 個 key，其中 460 個在原始碼找不到靜態引用。
 - `address_form_mobile_placeholder`
 - `address_form_state_placeholder`
 - `address_form_zip_placeholder`
-- `address_how_it_works_notice`
 - `address_new_description`
-- `address_unverify_detail_link`
-- `address_upload_image_upload_tap`
-- `alert_detail_message`
 - `alert_problem_order_message`
 - `alert_problem_shipment_or_order_message`
 - `alert_profile_almost_message`
 - `alert_user_email_verified_message`
 - `alert_user_profile_form_message`
 - `bidding_request_detail_status_cancelled_overdue_description`
-- `bottom_nav_buyandship`
 - `button_apply_title`
-- `button_normal_send_sms`
-- `button_text_back_to_index`
-- `buyandshop_product_card_price_unit`
-- `buyforyou_create_request_card_button`
-- `buyforyou_create_request_card_text`
-- `buyforyou_entry_widget_desc`
-- `buyforyou_entry_widget_item_link_placeholder`
-- `buyforyou_entry_widget_left_btn`
-- `buyforyou_entry_widget_right_btn`
-- `buyforyou_index_title`
-- `buyforyou_list_bottom_remark_approved`
-- `buyforyou_list_bottom_remark_archived`
-- `buyforyou_list_bottom_remark_processing`
-- `buyforyou_list_bottom_remark_purchased`
-- `buyforyou_list_bottom_remark_reviewing`
-- `buyforyou_list_count_unit`
-- `buyforyou_new_add_button_next`
-- `buyforyou_new_add_item_additional_title`
-- `buyforyou_new_add_item_banner_content`
-- `buyforyou_new_add_item_banner_title`
-- `buyforyou_new_add_item_color_placeholder`
-- `buyforyou_new_add_item_discount_code_placeholder`
-- `buyforyou_new_add_item_length_placeholder`
-- `buyforyou_new_add_item_link_placeholder`
-- `buyforyou_new_add_item_name`
-- `buyforyou_new_add_item_name_placeholder`
-- `buyforyou_new_add_item_others`
-- `buyforyou_new_add_item_others_placeholder`
-- `buyforyou_new_add_item_price_placeholder`
-- `buyforyou_new_add_item_quantity`
-- `buyforyou_new_add_item_size_placeholder`
-- `buyforyou_new_add_item_title`
-- `buyforyou_new_add_item_total`
-- `buyforyou_new_discount_code_tooltip`
 - `buyforyou_order_detail_log_price`
 - `buyforyou_order_detail_log_quantity`
-- `buyforyou_order_detail_main_product_default_cacnelled_message`
 - `buyforyou_order_details_approved`
-- `buyforyou_order_details_buyer`
-- `buyforyou_order_details_contain`
 - `buyforyou_order_details_download_receipt_button`
 - `buyforyou_order_details_item_cancelled`
-- `buyforyou_order_details_item_subtotal`
 - `buyforyou_order_details_remark`
 - `buyforyou_order_details_request_info_title`
 - `buyforyou_order_details_request_note`
 - `buyforyou_order_details_tax`
 - `buyforyou_order_details_warehouse`
-- `buyforyou_payment_due_at_format`
 - `buyforyou_payment_failed_button_bin_number_not_match_coupon`
 - `buyforyou_payment_failed_content_bin_number_not_match_coupon`
 - `buyforyou_payment_failed_title_bin_number_not_match_coupon`
@@ -216,9 +159,6 @@ lang 檔共 1895 個 key，其中 460 個在原始碼找不到靜態引用。
 - `credit_redeem_balance_zero`
 - `delete_account_button_action_text`
 - `delete_order_button`
-- `dialog_apply_draft_no`
-- `dialog_apply_draft_title`
-- `dialog_apply_draft_yes`
 - `dialog_global_site_local_access_description`
 - `dialog_global_site_local_access_title`
 - `dialog_later`
@@ -226,6 +166,7 @@ lang 檔共 1895 個 key，其中 460 個在原始碼找不到靜態引用。
 - `dialog_revert`
 - `dialog_switch_title`
 - `dialog_switch_version`
+- `done`
 - `done_button`
 - `express_checkout_payment_failed_button_incorrect_price`
 - `express_checkout_payment_failed_button_not_available`
@@ -272,23 +213,12 @@ lang 檔共 1895 個 key，其中 460 個在原始碼找不到靜態引用。
 - `input_buyforyou_request_min_bid_title`
 - `input_buyforyou_request_new_max_bid_local_title`
 - `item_sold_with_count_title`
-- `item_stock_available_with_count_title`
-- `item_stock_last_one_title`
 - `learn_more_desc_shipment_problem`
 - `learn_more_desc_shipment_undeclared`
 - `legal_profile_dialog`
 - `main_nav_home`
 - `member_centre_yahoo_sidebar_title`
 - `member_header_greeting`
-- `menu_list_title_account_settings`
-- `menu_list_title_address`
-- `menu_list_title_credits`
-- `menu_list_title_product_sharing`
-- `menu_list_title_profile`
-- `menu_list_title_referral`
-- `menu_list_title_support`
-- `menu_title_account`
-- `menu_title_settings`
 - `my_account_menu_item_account_settings`
 - `my_account_not_login_card_button`
 - `my_account_not_login_card_title`
@@ -367,6 +297,7 @@ lang 檔共 1895 個 key，其中 460 個在原始碼找不到靜態引用。
 - `redemption_picker_point_disable_message`
 - `redemption_picker_recommended`
 - `redemption_picker_search_keywords_subtitle`
+- `referral_card_title`
 - `referral_sign_up_successful_page_description`
 - `referral_sign_up_successful_page_title`
 - `registered_success_button_visit_member_centre`
@@ -409,6 +340,7 @@ lang 檔共 1895 個 key，其中 460 個在原始碼找不到靜態引用。
 - `shipment_consolidate_form_shipment_placeholder`
 - `shipment_consolidate_form_shipment_title`
 - `shipment_consolidate_form_summary_title`
+- `shipment_detail_main_info_remark`
 - `shipment_detail_main_order_info_title`
 - `shipment_detail_main_product_item_subtotal`
 - `shipment_detail_main_product_item_title`
@@ -416,6 +348,15 @@ lang 檔共 1895 個 key，其中 460 個在原始碼找不到靜態引用。
 - `shipment_new_add_item_category1_placeholder`
 - `shipment_new_add_item_category2`
 - `shipment_new_add_item_quantity_placeholder`
+- `shipment_new_buyandship_plus_content`
+- `shipment_new_buyandship_plus_content_2`
+- `shipment_new_buyandship_plus_protect_value`
+- `shipment_new_buyandship_plus_radio_no`
+- `shipment_new_buyandship_plus_radio_no_notice`
+- `shipment_new_buyandship_plus_radio_yes`
+- `shipment_new_buyandship_plus_title`
+- `shipment_new_buyandship_plus_warranty_desc`
+- `shipment_new_buyandship_plus_warranty_tooltip`
 - `shipment_new_courier`
 - `shipment_new_courier_placeholder`
 - `shipment_new_how_it_works_notice`
@@ -459,6 +400,8 @@ lang 檔共 1895 個 key，其中 460 個在原始碼找不到靜態引用。
 - `unit_per_pound`
 - `user_customs_clearance_address_default_switch_description`
 - `validation_message_address_line_length`
+- `validation_message_check_word_name`
+- `validation_message_check_word_name_local`
 - `validation_message_consolidate_shipment_credit_numeric`
 - `validation_message_consolidate_shipment_credit_required`
 - `validation_message_greater_than_zero`
@@ -472,4 +415,5 @@ lang 檔共 1895 個 key，其中 460 個在原始碼找不到靜態引用。
 - `verify_email_error_message`
 - `verify_phone_number_sent_error_message`
 - `view_more`
+- `view_on_app_tag`
 - `welcome_user_name_text`
