@@ -1,8 +1,8 @@
 # 疑似未使用的 langkey
 
-產生時間：2026-10-27 09:58 · 掃描來源：/private/tmp/claude-502/-Users-Yu-Project-langkey-finder/06167531-3417-4c0c-ba71-5c9cc4fdbb94/scratchpad/bns-main
+產生時間：2026-10-29 11:10 · 掃描來源：/private/tmp/claude-502/-Users-Yu-Project-langkey-finder/c7e1bafa-756d-407c-89e6-ae8dab5e14f0/scratchpad/bns-main
 
-lang 檔共 1832 個 key，其中 406 個在原始碼找不到靜態引用。
+lang 檔共 1832 個 key，其中 398 個在原始碼找不到靜態引用。
 
 > ⚠️ 注意：lang 檔來自 POEditor（fetch_langfile.py, project 745234）。
 > 本清單只代表 **bns-web-member 這個 repo** 沒有引用；若該 POEditor 專案
@@ -99,7 +99,7 @@ lang 檔共 1832 個 key，其中 406 個在原始碼找不到靜態引用。
 - `product_sharing_timeago_seconds`（樣板前綴 `product_sharing_timeago_…`）
 - `product_sharing_timeago_years`（樣板前綴 `product_sharing_timeago_…`）
 
-## 🗑 完全查無引用（刪除候選，仍建議人工確認）— 318 個
+## 🗑 完全查無引用（刪除候選，仍建議人工確認）— 310 個
 
 - `account_ad_title`
 - `account_index_blog_description`
@@ -160,7 +160,6 @@ lang 檔共 1832 個 key，其中 406 個在原始碼找不到靜態引用。
 - `buyforyou_request_creation_second_hand_policy_description`
 - `buyforyou_request_creation_yahoo_policy_description`
 - `buyforyou_request_detail_status_completed_label`
-- `cancel_order_button`
 - `checkbox_confirm_error_msg`
 - `community_buyer_paid_price_label`
 - `community_group_deal_price_label`
@@ -217,7 +216,6 @@ lang 檔共 1832 個 key，其中 406 個在原始碼找不到靜態引用。
 - `input_buyforyou_request_min_bid_title`
 - `input_buyforyou_request_new_max_bid_local_title`
 - `item_sold_with_count_title`
-- `keep_order_button`
 - `learn_more_desc_order_problem`
 - `learn_more_desc_order_unpaid`
 - `learn_more_desc_shipment_problem`
@@ -243,11 +241,6 @@ lang 檔共 1832 個 key，其中 406 個在原始碼找不到靜態引用。
 - `my_account_not_login_card_title`
 - `new_text`
 - `or_text`
-- `order_cancel_confirm_desc`
-- `order_cancel_confirm_overdue_reminder`
-- `order_cancel_confirm_title`
-- `order_cancel_failed_toast`
-- `order_cancel_success_toast`
 - `order_create_buyforyou_section_title`
 - `order_create_buyforyou_subsection_new_desc`
 - `order_create_buyforyou_subsection_new_title`
@@ -274,7 +267,6 @@ lang 檔共 1832 個 key，其中 406 個在原始碼找不到靜態引用。
 - `order_list_banner_description`
 - `order_list_banner_title`
 - `order_list_count_unit`
-- `order_manage_sheet_title`
 - `order_payment_method_online`
 - `order_status_buyforyou_section_title`
 - `order_status_buyforyou_subsection_status_desc`
